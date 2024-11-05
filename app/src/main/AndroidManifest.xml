@@ -31,5 +31,11 @@
 
         <activity android:name=".AddActivity" android:exported="true" />
 
+        <activity android:name=".ListActivity" android:exported="true" />
+
+        <activity android:name=".AcomplishedActivity" android:exported="true" />
+
+        <activity android:name=".DeleteActivity" android:exported="true" />
+
     </application>
 </manifest>

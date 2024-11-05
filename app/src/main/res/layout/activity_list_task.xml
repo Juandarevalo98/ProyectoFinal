@@ -45,75 +45,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agregar Tarea"
+        android:text="Editar Tarea"
         android:textSize="40sp"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Lista de Tareas"
         android:textSize="30sp"
-        android:text="Título de la tarea" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tituloTareaEditText"
-        android:hint="Título de la Tarea" />
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Descripción"
-        android:layout_marginTop="16dp" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/descripcionEditText"
-        android:hint="Campo de texto" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Fecha de Vencimiento"
-        android:layout_marginTop="16dp" />
-    <TextView
-        android:id="@+id/fechaVencimientoText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Selecciona una fecha"
-        android:padding="8dp"
-        android:background="@android:color/darker_gray" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="24dp">
-
-        <Button
-            android:id="@+id/button_guardar"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Guardar"
-            android:textSize="20sp"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:textColor="@android:color/white" />
-
-        <Button
-            android:id="@+id/button_cancelar"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Cancelar"
-            android:textSize="20sp"
-            android:backgroundTint="@android:color/holo_red_dark"
-            android:textColor="@android:color/white"
-            android:layout_marginStart="8dp" />
-    </LinearLayout>
 </LinearLayout>

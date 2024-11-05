@@ -16,7 +16,7 @@ class TaskActivity : ComponentActivity() {
         val buttonUser: ImageButton = findViewById(R.id.button_user)
         val addTaskButton = findViewById<Button>(R.id.button_add_task)
         val editTaskButton = findViewById<Button>(R.id.button_edit_task)
-        val complishedButton = findViewById<Button>(R.id.button_task_acomplished)
+        val acomplishedButton = findViewById<Button>(R.id.button_task_acomplished)
         val deletedTaskButton = findViewById<Button>(R.id.button_deleted_task)
 
         addTaskButton.setOnClickListener {
@@ -24,8 +24,24 @@ class TaskActivity : ComponentActivity() {
             startActivity(intent)
         }
 
+        editTaskButton.setOnClickListener {
+            val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
+        }
+
+        acomplishedButton.setOnClickListener {
+            val intent = Intent(this, AcomplishedActivity::class.java)
+            startActivity(intent)
+        }
+
+        deletedTaskButton.setOnClickListener {
+            val intent = Intent(this, DeleteActivity::class.java)
+            startActivity(intent)
+        }
+
         buttonHome.setOnClickListener {
-            setContentView(R.layout.activity_home)
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
         }
     }
 }

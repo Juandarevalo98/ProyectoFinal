@@ -14,7 +14,7 @@ class HomeActivity : ComponentActivity() {
 
         val gestionTareasButton = findViewById<Button>(R.id.button_gestion_tareas)
         val ConfiguracionButton = findViewById<Button>(R.id.button_configuracion)
-        val NoticicacionButton = findViewById<Button>(R.id.button_notificaciones)
+        val NoticicacionButton = findViewById<Button>(R.id.button_configuracion)
 
         gestionTareasButton.setOnClickListener {
             val intent = Intent(this, TaskActivity::class.java)

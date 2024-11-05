@@ -45,7 +45,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agregar Tarea"
+        android:text="Editar Tarea"
         android:textSize="40sp"
         android:textStyle="bold"
         android:layout_gravity="center"
@@ -87,6 +87,49 @@
         android:text="Selecciona una fecha"
         android:padding="8dp"
         android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Progreso de la Tarea"
+        android:layout_marginTop="16dp" />
+
+    <SeekBar
+        android:id="@+id/sbPresupuesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/tvProgreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progreso: " />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Subir archivo"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_subir_archivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar archivo"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/texto_archivo_seleccionado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No se ha seleccionado ningún archivo"
+        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray"
+        android:textSize="14sp" />
 
 
     <LinearLayout
