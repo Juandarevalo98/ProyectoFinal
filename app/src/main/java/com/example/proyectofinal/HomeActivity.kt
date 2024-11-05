@@ -1,15 +1,25 @@
 package com.example.proyectofinal
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import com.example.proyectofinal.ui.theme.ProyectoFinalTheme
 
 class HomeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Establecer el contenido de la pantalla de Home (el layout de activity_home.xml)
         setContentView(R.layout.activity_home)
+
+        val gestionTareasButton = findViewById<Button>(R.id.button_gestion_tareas)
+        val ConfiguracionButton = findViewById<Button>(R.id.button_configuracion)
+        val NoticicacionButton = findViewById<Button>(R.id.button_notificaciones)
+
+        gestionTareasButton.setOnClickListener {
+            val intent = Intent(this, TaskActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
+
