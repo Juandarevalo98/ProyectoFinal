@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="16dp">
 
     <TextView
@@ -45,6 +46,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
         android:text="Iniciar sesión"
         android:layout_marginTop="16dp" />
 
@@ -56,12 +59,18 @@
         android:textColor="@android:color/holo_blue_dark"
         android:layout_marginTop="16dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="Registrarse"
         android:textColor="@android:color/holo_blue_dark"
-        android:layout_marginTop="8dp" />
+        android:backgroundTint="@android:color/white"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@android:drawable/btn_default"
+        android:layout_marginTop="16dp" />
+
 </LinearLayout>
 

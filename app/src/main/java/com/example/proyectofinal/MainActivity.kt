@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.ComponentActivity
+import android.widget.TextView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +16,7 @@ class MainActivity : ComponentActivity() {
         val usernameEditText = findViewById<EditText>(R.id.editTextUsername)
         val passwordEditText = findViewById<EditText>(R.id.editTextPassword)
         val loginButton = findViewById<Button>(R.id.buttonLogin)
+        val registerButton = findViewById<Button>(R.id.buttonRegister)
 
         loginButton.setOnClickListener {
             val username = usernameEditText.text.toString()
@@ -28,6 +30,11 @@ class MainActivity : ComponentActivity() {
                 usernameEditText.error = "Credenciales incorrectas"
                 passwordEditText.error = "Credenciales incorrectas"
             }
+        }
+
+        registerButton.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 }
